@@ -10,8 +10,10 @@
     <span *ngIf="crew.length == 3">Full</span>
     </h3>
     <ol>
-        <li *ngFor="let astronaut of crew" (mouseover)="memberHover(astronaut)" (mouseout)="memberHover()">{{astronaut.name}}</li>
+        <li *ngFor="let astronaut of crew" (mouseover)="memberHover(astronaut)" (mouseout)="memberHover()">{{astronaut.name}}
+        </li>
     </ol>
     <!-- Add an img tag here to display astronaut photos. -->
     <img *ngIf="hoveredCandidate !== undefined" src="{{hoveredCandidate.photo}}" />
+    <!-- <p *ngFor="let astronaut of crew">{{astronaut.title}}</p> -->
 </div>
